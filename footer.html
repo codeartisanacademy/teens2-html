@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+
+        #container{
+            flex-grow: 1;
+        }
+
+        #footer{
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>header</h1>
+        <p>The flex-grow property defines what happens inside the flex container when there’s too much positive space (i.e. the flex items don’t span across the whole container). Its default value is 0 which means that all the remaining space will be equally allocated between the items. So, when we set flex-grow to 1, .container will get all the remaining space on the screen. At the same time, <footer> will get no extra space, so it will be automatically pushed down to the bottom of the page.
+
+        </p>
+    </div>
+    <div id="footer">
+        <h2>footer</h2>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: yellow;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        #container{
+            
+            background-color: aqua;
+            flex: 1;
+        }
+        #header{
+            background-color: blanchedalmond;
+            padding:20px;
+        }
+        #navigation ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        #navigation li{
+            display: inline;
+            margin-right: 20px;
+        }
+        #content{
+            background-color: darkkhaki;
+            display: flex;
+        }
+        #main-content{
+            background-color: rgb(204, 238, 172);
+            flex-grow: 3;
+        }
+        #side-content{
+            background-color: rgb(170, 140, 240);
+            flex-grow: 1;
+        }
+        #footer{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <div id="main-content">
+                <h1>Main Content</h1>
+            </div>
+            <div id="side-content">
+                <h1>Side Content</h1>
+            </div>
+        </div>   
+    </div>
+    <!-- the end of the #container div -->
+    <div id="footer">
+        <h3>Footer</h3>
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Table</title>
+    <style>
+        table{
+            border:solid 1px black;
+            border-collapse: collapse;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        th, td{
+            border:solid 1px black;
+            padding:10px;
+        }
+        h2{
+            display: flex;
+            justify-content: center;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        thead:first-child{
+            background-color: goldenrod;
+        }
+        #colored{
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="sched">
+        <h2>Table 1</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">Schedules</th>
+                </tr>
+                <tr>
+                    <th>Tutor</th>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td></td>
+                    <td>x</td>
+                    <td>x</td>
+                </tr>
+                <tr>
+                    <td>Jane</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mike</td>
+                    <td></td>
+                    <td>x</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <th colspan="4">Language</th>
+                </tr>
+                <tr id="colored">
+                    <th>Tutor</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Python</td>
+                    <td>Java</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Jane</td>
+                    <td></td>
+                    <td>Java</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mike</td>
+                    <td>C++</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        label{
+            display: block;
+        }
+        .form-group{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="GET">
+        <div class="form-group">
+            <label for="id_firstname">First name</label> 
+            <input type="text" id="id_firstname" name="firstname">
+        </div>
+        <div class="form-group">
+            <label for="id_email">Email</label> 
+            <input type="email" id="id_email" name="email">
+        </div>    
+        <div class="form-group">
+            <label for="id_password">Password</label> 
+            <input type="password" id="id_password" name="password">
+        </div>
+        <div class="form-group">
+            <label>Gender</label>
+            <input type="radio" name="gender" value="m"> Male <input type="radio" name="gender" value="f"> Female
+        </div>
+        <div class="form-group">
+            <label>Location</label>
+            <select name="location">
+                <option value="">--- select your city ---</option>
+                <option value="jkt">Jakarta</option>
+                <option value="sby">Surabaya</option>
+                <option value="bdg">Bandung</option>
+                <option value="dps">Denpasar</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Languages</label>
+            <input type="checkbox" name="language" value="id"> Indonesia
+            <input type="checkbox" name="language" value="en"> English
+            <input type="checkbox" name="language" value="de"> Germany
+            <input type="checkbox" name="language" value="fr"> France
+        </div>
+        <div class="form-group">
+            <label for="id_comment">Comment</label>
+            <textarea name="comment" id="id_comment" cols="30" rows="5"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+        </div>
+    </form>
+</body>
+</html>
