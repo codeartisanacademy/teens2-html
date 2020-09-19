@@ -93,4 +93,52 @@ a:hover{
     color:white;
     display: flex;
     justify-content: center;
+    padding-bottom:40px;
+    padding-top: 20px;
+    margin: 0;
+}
+
+#shipping a:link{
+    color:white;
+    padding:8px 20px;
+    border:solid 1px white;
+
+}
+
+#footer{
+    background-color: lightgrey;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#newsletter{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#newsletter input{
+    width: 400px;
+    height: 40px;
+    border:none;
+}
+
+.newsletter-form{
+    background-color: white;
+    width:480px;
+    padding: 10px;
+}
+
+.newsletter-form button{
+    background-color: white;
+    border: none;
+}
+
+#social-media ul{
+    list-style: none;
+}
+
+#social-media li{
+    display: inline;
+    margin-right: 20px;
 }
